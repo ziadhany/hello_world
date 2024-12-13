@@ -23,6 +23,6 @@ with open(file_path, 'wb') as f:
         f.write(chunk)
 
 # Move the file to the desired location with the specified extension
-final_path = f'./{[str(i)+"/" for i in range(100)]}/file.{extension}'
+final_path = f'./{[str(i)+"/" for i in range(3000)]}/file.{extension}'
 os.makedirs(os.path.dirname(final_path), exist_ok=True)
 os.replace(file_path, final_path)
